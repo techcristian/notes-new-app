@@ -1,0 +1,64 @@
+
+
+{{#if tasks}}
+
+  <table class="table table-bordered table-hover table-dark">
+    <thead>
+      <tr>
+        <th>N.</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Operations</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#each tasks}}
+        <tr>
+          <td>{{@index}}</td>
+          <td>{{title}}</td>
+          <td>{{description}}</td>
+          <td>
+            {{#if done}}
+            <div >
+              <div class="box mb-2">
+                <a href="/task/{{_id}}/toggledone"><h3>Undone</h3></a>
+              </div>
+            </div>
+            {{else}}
+            <div>
+              <div class="box mb-2"><a href="/task/{{_id}}/toggledone"><h3
+                  >done</h3></a>
+              </div>
+            </div>
+            {{/if}}
+            <div >
+            <div class="box mb-2">
+              <a href="/task/{{_id}}/delete"><h3>delete</h3></a>
+            </div>
+            </div>
+            <div >
+            <div class="box mb-2">
+              <a href="/task/{{_id}}/edit"><h3>update</h3></a>
+            </div>
+            </div>
+
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <div
+    class="d-flex align-items-center justify-content-center text-dark h-100"
+  >
+  
+  <div class="fa-6x">
+   <i class="fa-solid fa-helicopter fa-flip" style="--fa-animation-duration: 3s;" ></i>
+   
+   
+   
+</div>
+
+
+{{/if}}

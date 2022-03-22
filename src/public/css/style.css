@@ -1,0 +1,116 @@
+body {
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23080709' fill-opacity='0.34' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.polling_message {
+    color: white;
+    float: left;
+    margin-right: 2%;
+}
+
+.view_port {
+    background-color: black;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*cyclon-eye red*/
+
+.cylon_eye {
+    background-color: red;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .9) 25%, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+    animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye {
+    from {
+        margin-left: -20%;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+@keyframes move_eye {
+    from {
+        margin-left: -20%;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+
+/* portada*/
+
+.logo {
+    width: 400px;
+    height: 500px;
+}
+
+
+/*box*/
+
+.box {
+    background-color: rgb(23, 23, 24);
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding-left: 4px;
+    animation-direction: normal;
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h3 {
+    color: white;
+    text-align: center
+}
+
+.box:hover {
+    background-color: red;
+    border: 1.5px solid rgb(7, 7, 7);
+    transition: background-color 1s ease-out;
+}
+
+.boton:hover {
+    background-color: red;
+    border: 1.5px solid rgb(7, 7, 7);
+    transition: background-color 1s ease-out;
+}
+
+.shadow {
+    box-shadow: 0 0 20px 0 rgba(243, 2, 2, 0.3);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.7em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid red;
+    color: rgb(245, 245, 243);
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}

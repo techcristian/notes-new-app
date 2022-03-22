@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+     <div class="animate__animated animate__slideInUp">
+      <div class="card card-body bg-dark p-4 text-white text-center rounded-0">
+        <div class="animate__animated animate__fadeInLeftBig">
+          <div class="d-flex align-items-center justify-content-center">  
+             <h1 >Update a Task</h1>
+        </div>
+        </div>
+        
+        <img class="animate__animated animate__fadeInDownBig" src="/img/buda3.JPEG">
+        
+        <form action="/task/{{task._id}}/edit" method="POST">
+          <div class="mb-3">
+            <div>
+              <label for="title">title:</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="title"
+                value="{{task.title}}"
+                class="form-control rounded-0 bg-dark text-white"
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="description">description;</label>
+              <textarea
+                name="description"
+                id="description"
+                rows="2"
+                placeholder="description"
+                class="form-control rounded-0 bg-dark text-white"
+              > {{task.description}}</textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-dark mt-2 boton">
+            SAVE
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div> 

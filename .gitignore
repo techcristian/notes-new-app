@@ -1,0 +1,9 @@
+# variables de entorno
+.env
+
+# modulos de dependencias node
+node_modules
+
+
+# carpeta construida y compilada con el comando babel
+dist
