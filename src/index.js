@@ -1,5 +1,11 @@
+import './database';
 import app from "./app";
-import './database'
+
+
+
+
+
+
 
 app.set('port', process.env.PORT || 4000);
 
